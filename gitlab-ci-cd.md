@@ -1,4 +1,6 @@
-# Gitlab Runner Configuration
+# Gitlab CI/CD
+
+## Gitlab Runner Configuration
 
 ### install gitlab runner to linux
 
