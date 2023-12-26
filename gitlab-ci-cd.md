@@ -26,3 +26,9 @@ sudo gitlab-runner run
 [How do I delete/unregister a GitLab runner](https://stackoverflow.com/questions/66616014/how-do-i-delete-unregister-a-gitlab-runner)
 
     💡 If you change a runner, don’t forget to update tags on gitlab-ci.yml file
+
+### References
+
+- This is the tutorial I followed : [Gitlab CI/CD for Docker, Python Flask, AWS ECS Dev Ops | Gitlab CI/CD Docker Deployment on AWS ECS](https://youtu.be/vb7w7jnkD2s) (This is all the information you need to deploy a python app to a server with gitlab ci/cd)
+
+- [GITLAB CI CD FULL COURSE IN 3 HOURS  | Gitlab CI CD From Zero To Hero](https://youtu.be/Typ9U6k6g5s?list=PLVx1qovxj-am2q9M8mC2CmMUfrxZGoZ9J)
