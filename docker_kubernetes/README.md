@@ -24,3 +24,4 @@
 3. [Containers Concepts](./003_containers_concepts.md)
 4. [Persisting Data](./004_persisting_data.md)
 5. [Docker Compose](./005_docker_compose.md)
+6. [Container Registry](./006_container_registry.md)
