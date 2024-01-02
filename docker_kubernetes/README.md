@@ -26,3 +26,4 @@
 5. [Docker Compose](./005_docker_compose.md)
 6. [Container Registry](./006_container_registry.md)
 7. [Kubernetes Concepts](./007_kubernetes_concepts.md)
+8. [Namespaces](./008_namespaces.md)
