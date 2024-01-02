@@ -23,4 +23,4 @@
 2. [Cloud Native](./002_cloud_native.md)
 3. [Containers Concepts](./003_containers_concepts.md)
 4. [Persisting Data](./004_persisting_data.md)
-
+5. [Docker Compose](./005_docker_compose.md)
