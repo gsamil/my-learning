@@ -25,3 +25,4 @@
 4. [Persisting Data](./004_persisting_data.md)
 5. [Docker Compose](./005_docker_compose.md)
 6. [Container Registry](./006_container_registry.md)
+7. [Kubernetes Concepts](./007_kubernetes_concepts.md)
