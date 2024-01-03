@@ -33,7 +33,7 @@
 12. [Multi-Container Pods](./012_multicontainer_pods.md)
 13. [Workloads](./013_workloads.md)
 14. [Updates](./014_updates.md)
-
+15. [Services](./015_services.md)
 
 ## References
 
