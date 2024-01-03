@@ -32,6 +32,8 @@
 11. [Selectors](./011_selectors.md)
 12. [Multi-Container Pods](./012_multicontainer_pods.md)
 13. [Workloads](./013_workloads.md)
+14. [Updates](./014_updates.md)
+
 
 ## References
 
