@@ -27,3 +27,4 @@
 6. [Container Registry](./006_container_registry.md)
 7. [Kubernetes Concepts](./007_kubernetes_concepts.md)
 8. [Namespaces](./008_namespaces.md)
+9. [Nodes](./009_nodes.md)
