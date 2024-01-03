@@ -29,3 +29,5 @@
 8. [Namespaces](./008_namespaces.md)
 9. [Nodes](./009_nodes.md)
 10. [Pods](./010_pods.md)
+11. [Selectors](./011_selectors.md)
+
