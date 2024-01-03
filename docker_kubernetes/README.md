@@ -28,3 +28,4 @@
 7. [Kubernetes Concepts](./007_kubernetes_concepts.md)
 8. [Namespaces](./008_namespaces.md)
 9. [Nodes](./009_nodes.md)
+10. [Pods](./010_pods.md)
