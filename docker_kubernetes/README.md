@@ -31,4 +31,9 @@
 10. [Pods](./010_pods.md)
 11. [Selectors](./011_selectors.md)
 12. [Multi-Container Pods](./012_multicontainer_pods.md)
+13. [Workloads](./013_workloads.md)
+
+## References
+
+- [Fundamentals-HandsOn](https://github.com/K8sAcademy/Fundamentals-HandsOn)
 
