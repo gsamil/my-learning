@@ -1,7 +1,5 @@
 # Docker Containers and Kubernetes Fundamentals – Full Hands-On Course
 
-- [Youtube Link](https://youtu.be/kTp5xUtcalw)
-
 ### Course Overview
 
 - Containers, Docker, Docker Compose
@@ -42,5 +40,6 @@
 
 ## References
 
-- [Fundamentals-HandsOn](https://github.com/K8sAcademy/Fundamentals-HandsOn)
+- [Youtube Link](https://youtu.be/kTp5xUtcalw)
+- [Fundamentals-HandsOn Github Link](https://github.com/K8sAcademy/Fundamentals-HandsOn)
 
