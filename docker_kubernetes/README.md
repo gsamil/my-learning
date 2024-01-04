@@ -36,6 +36,7 @@
 15. [Services](./015_services.md)
 16. [Storage and Persistence](./016_storage_and_persistence.md)
 17. [Application Settings](./017_application_settings.md)
+18. [Observability](./018_observability.md)
 
 ## References
 
