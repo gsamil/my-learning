@@ -38,6 +38,7 @@
 17. [Application Settings](./017_application_settings.md)
 18. [Observability](./018_observability.md)
 19. [Dashboards](./019_dashboards.md)
+20. [Scaling](./020_scaling.md)
 
 ## References
 
