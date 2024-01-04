@@ -34,6 +34,7 @@
 13. [Workloads](./013_workloads.md)
 14. [Updates](./014_updates.md)
 15. [Services](./015_services.md)
+16. [Storage and Persistence](./016_storage_and_persistence.md)
 
 ## References
 
