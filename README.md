@@ -7,3 +7,4 @@ I created this repo to have an organized view of them in my mind. I migh not nee
 - [Portainer](./portainer.md)
 - [Docker Containers and Kubernetes Fundamentals – Full Hands-On Course](./docker_kubernetes/README.md)
 - [Apache Kafka Tutorial](./kafka.md)
+- [PostgreSQL Tutorial](./postgresql.md)
