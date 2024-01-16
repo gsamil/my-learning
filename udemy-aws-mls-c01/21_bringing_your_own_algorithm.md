@@ -56,3 +56,53 @@
 ## Summary
 
 SageMaker facilitates a streamlined process for training and hosting machine learning models by providing a standardized environment. Custom containers can easily integrate into this environment, provided they conform to SageMaker's specifications. This approach simplifies the development and deployment of machine learning workflows, allowing for scalability and ease of use within the AWS ecosystem.
+
+
+## Hand-On
+
+- [Scikit-Learn Training and Serving Example](https://github.com/ChandraLingam/AmazonSageMakerCourse/blob/master/CustomAlgorithm/ScikitLearn/Iris/iris_scikit_learn_training_and_serving.ipynb)
+
+    - I had an error about `numexpr` package. I fixed it with below command:
+
+        ```python
+        !pip install numexpr==2.8.0 --upgrade
+        ```
+
+- [Built Your Own Container](https://github.com/aws/amazon-sagemaker-examples/blob/main/advanced_functionality/scikit_bring_your_own/scikit_bring_your_own.ipynb)
+
+    - I had an error in this line: (I think it's related to sagemaker versions)
+    
+        ```python
+        from sagemaker.predictor import csv_serializer
+
+        predictor = tree.deploy(1, "ml.m4.xlarge", serializer=csv_serializer)
+        ```
+    
+    - I had to change it to:
+    
+        ```python
+        from sagemaker.serializers import CSVSerializer
+
+        csv_serializer = CSVSerializer()
+
+        predictor = tree.deploy(1, "ml.m4.xlarge", serializer=csv_serializer)
+        ```
+
+    - I had another error in this line: 
+
+        ```python
+        transformer.transform(
+            data_location, 
+            content_type="text/csv", 
+            split_type="Line", 
+            input_filter="$[1:]"
+        )
+        transformer.wait()
+        ```
+
+        ```
+        ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateTransformJob operation: The account-level service limit 'ml.m4.xlarge for transform job usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please use AWS Service Quotas to request an increase for this quota. If AWS Service Quotas is not available, contact AWS support to request an increase for this quota.
+        ```
+
+    - I had to request an increase for `ml.m5.xlarge for transform job usage` quota. See [this link](https://repost.aws/knowledge-center/sagemaker-resource-limit-exceeded-error) for more details.
+
