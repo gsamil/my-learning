@@ -58,7 +58,7 @@
 SageMaker facilitates a streamlined process for training and hosting machine learning models by providing a standardized environment. Custom containers can easily integrate into this environment, provided they conform to SageMaker's specifications. This approach simplifies the development and deployment of machine learning workflows, allowing for scalability and ease of use within the AWS ecosystem.
 
 
-## Hand-On
+## Hands-On
 
 - [Scikit-Learn Training and Serving Example](https://github.com/ChandraLingam/AmazonSageMakerCourse/blob/master/CustomAlgorithm/ScikitLearn/Iris/iris_scikit_learn_training_and_serving.ipynb)
 
