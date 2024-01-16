@@ -10,8 +10,9 @@
 
 - [AWS Skill Builder](https://www.amazon.com/gp/f.html?C=L6EVD0079TVR&M=urn:rtn:msg:202301151903416e3ad4f6ff0949a98951e3ba58e0p0na&R=36S58368GRRDW&T=C&U=https%3A%2F%2Fexplore.skillbuilder.aws%2Flearn&H=53I6ASQQWC3ZBZ0SJ1IYLWBVMFSA)
 
-### [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-content-type=*all&awsf.whitepapers-global-methodology=*all&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all&awsf.whitepapers-business-category=*all)
+### AWS Whitepapers & Guides
 
+- [AWS Whitepapers & Guides](https://aws.amazon.com/whitepapers/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc&awsf.whitepapers-content-type=*all&awsf.whitepapers-global-methodology=*all&awsf.whitepapers-tech-category=*all&awsf.whitepapers-industries=*all&awsf.whitepapers-business-category=*all)
 - [Overview of Amazon Web Services](https://d0.awsstatic.com/whitepapers/aws-overview.pdf)
 - [Architecting for the Cloud: AWS Best Practices](https://d1.awsstatic.com/whitepapers/AWS_Cloud_Best_Practices.pdf)
 - [How AWS Pricing Works](https://d0.awsstatic.com/whitepapers/aws_pricing_overview.pdf)
@@ -116,7 +117,7 @@ Some of the accounts are running into the `ResourceLimitExceeded` when creatin
 
 Here is an example of error:
 
-```jsx
+```
 1. ResourceLimitExceeded: An error occurred (ResourceLimitExceeded) when calling the CreateEndpoint operation: The account-level service limit 'ml.m4.xlarge for endpoint usage' is 0 Instances, with current utilization of 0 Instances and a request delta of 1 Instances. Please contact AWS support to request an increase for this limit.
 ```
 
@@ -133,27 +134,23 @@ Specify appropriate **instance type and new limit.**
 
 You can specify **5** as the new limit
 
-# 7.79 - **Q&A: How does SageMaker built-in know the target variable?**
+## 7.79 - **Q&A: How does SageMaker built-in know the target variable?**
 
 During training, the first column in the CSV file is the target variable
 
 During inference, you need to provide only the features (i.e. target variable should not be provided)
 
-Here is the relevant notes.
+[Here](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) is the relevant notes.
 
-https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html
+For CSV training, the algorithm assumes that the target variable is in the first column and that the CSV does not have a header record. For CSV inference, the algorithm assumes that CSV input does not have the label column. For libsvm training, the algorithm assumes that the label is in the first column. Subsequent columns contain the zero-based index value pairs for features. So each row has the format: `<label> <index0>:<value0> <index1>:<value1> ...` Inference requests for libsvm might not have labels in the libsvm format
 
-```jsx
-For CSV training, the algorithm assumes that the target variable is in the first column and that the CSV does not have a header record. For CSV inference, the algorithm assumes that CSV input does not have the label column. For libsvm training, the algorithm assumes that the label is in the first column. Subsequent columns contain the zero-based index value pairs for features. So each row has the format: <label> <index0>:<value0> <index1>:<value1> ... Inference requests for libsvm might not have labels in the libsvm format
-```
-
-# 7.82 - SageMaker Endpoint Features
+## 7.82 - SageMaker Endpoint Features
 
 - Cloudwatch
 - Autoscaling
 - Model hosting : Variants of Algorithms
 
-# 7.83 - **SageMaker Spot Instances - Save up to 90% for training jobs**
+## 7.83 - SageMaker Spot Instances - Save up to 90% for training jobs
 
 **Spot Instances - Save up to 90% over on-demand instances for training**
 
@@ -236,10 +233,10 @@ The 50% discount vouchers are issued once you appear and pass any AWS certificat
 
 6. All Active Benefits are listed on the benefits page
 
-a. Look for **50% Discount on your next Exam**
+    a. Look for **50% Discount on your next Exam**
 
-b. Click on the **Claim Benefit link**
+    b. Click on the **Claim Benefit link**
 
-c. A code is issued and displayed on page
+    c. A code is issued and displayed on page
 
-d. You can use the code when registering for the exam
+    d. You can use the code when registering for the exam
