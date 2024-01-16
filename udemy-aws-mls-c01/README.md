@@ -4,7 +4,14 @@
 
 ## Sections
 
-- [21. Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
+### 1. Introduction and Housekeeping
+
+- [4. AWS ML Specialty Certification Exam Overview](./section_1/4_aws_mls_exam_overview.md)
+
+
+### 21. Bring Your Own Algorithm
+
+- [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
 
 ## References
 
