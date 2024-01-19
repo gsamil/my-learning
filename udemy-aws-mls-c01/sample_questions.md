@@ -143,6 +143,24 @@ Both C and D meet the recall and FPR requirement. However, the business cost due
 
 So, model D is the answer
 
+# AWS Sample Question #8
+
+A Machine Learning Engineer is preparing a data frame for a supervised learning task with the Amazon SageMaker Linear Learner algorithm. The ML Engineer notices the target label classes are highly imbalanced and multiple feature columns contain missing values. The proportion of missing values across the entire data frame is less than 5%.
+
+What should the ML Engineer do to minimize bias due to missing values?
+
+A. Replace each missing value by the mean or median across non-missing values in same row.
+
+B. Delete observations that contain missing values because these represent less than 5% of the data.
+
+C. Replace each missing value by the mean or median across non-missing values in the same column.
+
+D. For each feature, approximate the missing values using supervised learning based on other features.
+
+## Answer
+
+D – Use supervised learning to predict missing values based on the values of other features. Different supervised learning approaches might have different performances, but any properly implemented supervised learning approach should provide the same or better approximation than mean or median approximation, as proposed in responses A and C. Supervised learning applied to the imputation of missing values is an active field of research
+
 # AWS Sample Question #9
 
 A company has collected customer comments on its products, rating them as safe or unsafe, using decision trees. The training dataset has the following features: id, date, full review, full review summary, and a binary safe/unsafe tag. During training, any data sample with missing features was dropped. In a few instances, the test set was found to be missing the full review text field.
