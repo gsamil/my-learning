@@ -5,17 +5,32 @@
 
 ## Sections
 
-- 1. [Introduction and Housekeeping](./01_introduction_and_housekeeping.md)
-- 2. [Sagemaker Housekeeping](./02_sagemaker_housekeeping.md)
-- 3. [Machine Learning Concepts](./03_ml_concepts.md)
-- 4. [Model Performance Evaluation](./04_model_performance_evaluation.md)
-- 5. [Sagemaker Service Overview](./05_sagemaker_service_overview.md)
-- 6. [Sagemaker Service and SDK Changes](./06_sagemaker_service_and_sdk_changes.md)
-- 7. [XGBoost Gradient Boosted Trees](./07_xgboost_gradient_boosted_trees.md)
-- 8. [Invoke Model Endpoint from External Cliens](./08_invoke_model_endpoint_from_external_clients.md)
-- 21. [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
+- [Introduction and Housekeeping](./01_introduction_and_housekeeping.md)
+- [Sagemaker Housekeeping](./02_sagemaker_housekeeping.md)
+- [Machine Learning Concepts](./03_ml_concepts.md)
+- [Model Performance Evaluation](./04_model_performance_evaluation.md)
+- [Sagemaker Service Overview](./05_sagemaker_service_overview.md)
+- [Sagemaker Service and SDK Changes](./06_sagemaker_service_and_sdk_changes.md)
+- [XGBoost Gradient Boosted Trees](./07_xgboost_gradient_boosted_trees.md)
+- [Invoke Model Endpoint from External Cliens](./08_invoke_model_endpoint_from_external_clients.md)
+- [Endpoint Changes with Zero Downtime](./09_endpoint_changes_with_zero_downtime.md)
+- [Emerging AI Trends and Social Issues](./10_emerging_ai_trends_and_social_issues.md)
+- [Cloud Security and Access Management](./11_cloud_security_and_access_management.md)
+- [Principal Component Analysis (PCA)](./12_principal_component_analysis.md)
+- [Recommender Systems - Factorization Machines](./13_recommender_systems_factorization_machines.md)
+- [Model Optimization and Hyperparameter Tuning](./14_model_optimization_and_hyperparameter_tuning.md)
+- [Time Series Forecasting - DeepAR](./15_time_series_forecasting_deepar.md)
+- [Anomaly Detection - Random Cut Forest](./16_anomaly_detection_random_cut_forest.md)
+- [Generative AI Solutions](./17_generative_ai_solutions.md)
+- [Artificial Intelligence (AI) Services](./18_artificial_intelligence_ai_services.md)
+- [S3 Data Lake Architecture - Data Consolidation](./19_s3_data_lake_architecture_data_consolidation.md)
+- [Deep Learning and Neural Networks](./20_deep_learning_and_neural_networks.md)
+- [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
+- [Storage for Servers](./22_storage_for_servers.md)
+- [AWS - Support Plans and Feedback](./23_aws_support_plans_and_feedback.md)
+- [Databases on AWS](./24_databases_on_aws.md)
+- [On-Premises usage and other technologies](./25_on_premises_usage_and_other_technologies.md)
 
 ## References
 
 - [AWS Certified Machine Learning Specialty (MLS-C01)](https://www.udemy.com/course/aws-machine-learning-a-complete-guide-with-python/)
-
