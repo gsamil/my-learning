@@ -4,7 +4,7 @@
 
 ## Sections
 
-- 1. [Introduction and Housekeeping](./01_introduction_to_housekeeping.md)
+- 1. [Introduction and Housekeeping](./01_introduction_and_housekeeping.md)
 - 21. [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
 
 ## References
