@@ -11,4 +11,4 @@ I created this repo to have an organized view of them in my mind. I might not ne
 
 ## TODOs
 
-- [Machine Learning Fundamentals](./machine_learning_fundamentals.md)
+- [Machine Learning Fundamentals](./machine_learning/README.md)
