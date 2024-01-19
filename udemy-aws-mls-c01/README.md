@@ -1,6 +1,7 @@
 # Udemy AWS MLS-C01 Notes
 
 - [Course Overview](./overview.md)
+- [Sample Questions](./sample_questions.md)
 
 ## Sections
 
@@ -11,11 +12,8 @@
 - 5. [Sagemaker Service Overview](./05_sagemaker_service_overview.md)
 - 6. [Sagemaker Service and SDK Changes](./06_sagemaker_service_and_sdk_changes.md)
 - 7. [XGBoost Gradient Boosted Trees](./07_xgboost_gradient_boosted_trees.md)
+- 8. [Invoke Model Endpoint from External Cliens](./08_invoke_model_endpoint_from_external_clients.md)
 - 21. [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
-
----
-
-- [Sample Questions](./sample_questions.md)
 
 ## References
 
