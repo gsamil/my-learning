@@ -1,6 +1,6 @@
 # Udemy AWS MLS-C01 Notes
 
-- [Course Overview](./overview.md)
+- [Exam Information](./exam_info.md)
 - [Sample Questions](./sample_questions.md)
 
 ## Sections
