@@ -10,3 +10,8 @@ I created this repo to have an organized view of them in my mind. I might not ne
 - [PostgreSQL Tutorial](./postgresql.md)
 - [Machine Learning Fundamentals](./machine_learning/README.md)
 - [Speech Processing](./speech_processing/README.md)
+- [LLMs](./llms/README.md)
+
+## TODOs
+
+- There are todos in [Alignment Problem](./llms/alignment_problem.md)
