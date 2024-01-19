@@ -8,6 +8,7 @@
 - 2. [Sagemaker Housekeeping](./02_sagemaker_housekeeping.md)
 - 3. [Machine Learning Concepts](./03_ml_concepts.md)
 - 4. [Model Performance Evaluation](./04_model_performance_evaluation.md)
+- 5. [Sagemaker Service Overview](./05_sagemaker_service_overview.md)
 - 21. [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
 
 ---

@@ -1,3 +1,23 @@
+# AWS Sample Question #1
+
+A Machine Learning team has several large CSV datasets in Amazon S3. Historically, models built with the Amazon SageMaker Linear Learner algorithm have taken hours to train on similar-sized datasets. The team’s leaders need to accelerate the training process.
+
+What can a Machine Learning Specialist do to address this concern?
+
+A. Use Amazon SageMaker Pipe mode.
+
+B. Use Amazon Machine Learning to train the models.
+
+C. Use Amazon Kinesis to stream the data to Amazon SageMaker.
+
+D. Use AWS Glue to transform the CSV dataset to the JSON format
+
+## Answer
+
+A – Amazon SageMaker Pipe mode streams the data directly to the container, which improves the performance of training jobs. (Refer to this link for supporting information.) In Pipe mode, your training job streams data directly from Amazon S3. Streaming can provide faster start times for training jobs and better throughput. With Pipe mode, you also reduce the size of the Amazon EBS volumes for your training instances. B would not apply in this scenario. C is a streaming ingestion solution, but is not applicable in this scenario. D transforms the data structure.
+
+https://aws.amazon.com/blogs/machine-learning/now-use-pipe-mode-with-csv-datasets-for-faster-training-on-amazon-sagemaker-built-in-algorithms/
+
 # AWS Sample Question #2
 
 A term frequency–inverse document frequency (tf–idf) matrix using both unigrams and bigrams is built from a text corpus consisting of the following two sentences:
@@ -26,24 +46,6 @@ The phrases are “Please call the number below” and “Please do not call us.
 Each word individually (unigram) is “Please,” “call,” ”the,” ”number,” “below,” “do,” “not,” and “us.”
 
 The unique bigrams are “Please call,” “call the,” ”the number,” “number below,” “Please do,” “do not,” “not call,” and “call us.”
-
-# AWS Sample Question #9
-
-A company has collected customer comments on its products, rating them as safe or unsafe, using decision trees. The training dataset has the following features: id, date, full review, full review summary, and a binary safe/unsafe tag. During training, any data sample with missing features was dropped. In a few instances, the test set was found to be missing the full review text field.
-
-For this use case, which is the most effective course of action to address test data samples with missing features?
-
-A. Drop the test samples with missing full review text fields, and then run through the test set.
-
-B. Copy the summary text fields and use them to fill in the missing full review text fields, and then run through the test set.
-
-C. Use an algorithm that handles missing data better than decision trees.
-
-D. Generate synthetic data to fill in the fields that are missing data, and then run through the test set.
-
-## Answer
-
-B – In this case, a full review summary usually contains the most descriptive phrases of the entire review and is a valid stand-in for the missing full review text field.
 
 # AWS Sample Question #5
 
@@ -140,3 +142,40 @@ Model D misclassification cost = 5 * FP + 1 * FN = 5 * 2 + 1 * 18 = 10 + 18 = 28
 Both C and D meet the recall and FPR requirement. However, the business cost due to misclassification is less for model D.
 
 So, model D is the answer
+
+# AWS Sample Question #9
+
+A company has collected customer comments on its products, rating them as safe or unsafe, using decision trees. The training dataset has the following features: id, date, full review, full review summary, and a binary safe/unsafe tag. During training, any data sample with missing features was dropped. In a few instances, the test set was found to be missing the full review text field.
+
+For this use case, which is the most effective course of action to address test data samples with missing features?
+
+A. Drop the test samples with missing full review text fields, and then run through the test set.
+
+B. Copy the summary text fields and use them to fill in the missing full review text fields, and then run through the test set.
+
+C. Use an algorithm that handles missing data better than decision trees.
+
+D. Generate synthetic data to fill in the fields that are missing data, and then run through the test set.
+
+## Answer
+
+B – In this case, a full review summary usually contains the most descriptive phrases of the entire review and is a valid stand-in for the missing full review text field.
+
+# AWS Sample Question #10
+
+An insurance company needs to automate claim compliance reviews because human reviews are expensive and error-prone. The company has a large set of claims and a compliance label for each. Each claim consists of a few sentences in English, many of which contain complex related information. Management would like to use Amazon SageMaker built-in algorithms to design a machine learning supervised model that can be trained to read each claim and predict if the claim is compliant or not.
+
+Which approach should be used to extract features from the claims to be used as inputs for the downstream supervised task?
+
+A. Derive a dictionary of tokens from claims in the entire dataset. Apply one-hot encoding to tokens found in each claim of the training set. Send the derived features space as inputs to an Amazon SageMaker built-in supervised learning algorithm.
+
+B. Apply Amazon SageMaker BlazingText in Word2Vec mode to claims in the training set. Send the derived features space as inputs for the downstream supervised task.
+
+C. Apply Amazon SageMaker BlazingText in classification mode to labeled claims in the training set to derive features for the claims that correspond to the compliant and non-compliant labels, respectively.
+
+D. Apply Amazon SageMaker Object2Vec to claims in the training set. Send the derived features space as inputs for the downstream supervised task
+
+## Answer
+
+D – Amazon SageMaker Object2Vec generalizes the Word2Vec embedding technique for words to more complex objects, such as sentences and paragraphs. Since the supervised learning task is at the level of whole claims, for which there are labels, and no labels are available at the word level, Object2Vec needs be used instead of Word2Vec.
+
