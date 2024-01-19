@@ -51,6 +51,16 @@ If you encounter a `ResourceLimitExceeded Error`, follow these steps to request 
 - **Instructions on Quota Increase**: Detailed instructions are available at [Requesting a Quota Increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
 - **SageMaker Service Quotas Page**: For more information, visit the [SageMaker Service Quotas Page](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html). It provides details on default SageMaker quotas for new accounts and guides on requesting an increase if you've exceeded your quota.
 
+# 79 - Q&A: How does SageMaker built-in know the target variable?
+
+During training, the first column in the CSV file is the target variable
+
+During inference, you need to provide only the features (i.e. target variable should not be provided)
+
+[Here](https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost.html) is the relevant notes.
+
+For CSV training, the algorithm assumes that the target variable is in the first column and that the CSV does not have a header record. For CSV inference, the algorithm assumes that CSV input does not have the label column. For libsvm training, the algorithm assumes that the label is in the first column. Subsequent columns contain the zero-based index value pairs for features. So each row has the format: `<label> <index0>:<value0> <index1>:<value1> ...` Inference requests for libsvm might not have labels in the libsvm format
+
 # 82. SageMaker Endpoint Features
 
 AWS SageMaker provides robust management of model endpoints. It integrates with AWS CloudWatch and Auto Scaling for monitoring and automated scaling. Here's an overview of how SageMaker manages your model endpoints:
