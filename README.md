@@ -11,7 +11,10 @@ I created this repo to have an organized view of them in my mind. I might not ne
 - [Machine Learning Fundamentals](./machine_learning/README.md)
 - [Speech Processing](./speech_processing/README.md)
 - [LLMs](./llms/README.md)
+- [Algorithms](https://github.com/gsamil/algorithms/)
 
 ## TODOs
 
 - There are todos in [Alignment Problem](./llms/alignment_problem.md)
+- There are TODOs in [Hypothesis Testing](./statistics/hypothesis-testing.md)
+
