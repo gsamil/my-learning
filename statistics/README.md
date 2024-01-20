@@ -1,2 +1,2 @@
-- [z-score](./z-score.md)
+- [z-score](./z-score/z-score.md)
 - [Hypothesis Testing (with Future Work)](./hypothesis-testing.md)
