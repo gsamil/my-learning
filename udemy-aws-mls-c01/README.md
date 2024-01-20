@@ -27,9 +27,11 @@
 20. [Deep Learning and Neural Networks](./20_deep_learning_and_neural_networks.md)
 21. [Bring Your Own Algorithm](./21_bringing_your_own_algorithm.md)
 22. [Storage for Servers](./22_storage_for_servers.md)
-23. [AWS - Support Plans and Feedback](./23_aws_support_plans_and_feedback.md)
+23. AWS - Support Plans and Feedback
 24. [Databases on AWS](./24_databases_on_aws.md)
 25. [On-Premises usage and other technologies](./25_on_premises_usage_and_other_technologies.md)
+26. Practice Exam - AWS Certified Machine Learning Specialty
+27. Other Resources
 
 ## References
 
