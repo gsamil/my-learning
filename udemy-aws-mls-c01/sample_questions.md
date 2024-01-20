@@ -63,6 +63,49 @@ D. Create an AWS Data Pipeline that transforms the data. Then, create an Apache 
 
 B – AWS Glue is the correct answer because this option requires the least amount of setup and maintenance since it is serverless, and it does not require management of the infrastructure. Refer to this link for supporting information. A, C, and D are all solutions that can solve the problem, but require more steps for configuration, and require higher operational overhead to run and maintain.
 
+# AWS Sample Question #4
+
+A Data Scientist is working on optimizing a model during the training process by varying multiple parameters. The Data Scientist observes that, during multiple runs with identical parameters, the loss function converges to different, yet stable, values.
+
+What should the Data Scientist do to improve the training process?
+
+A. Increase the learning rate. Keep the batch size the same.
+
+B. Reduce the batch size. Decrease the learning rate.
+
+C. Keep the batch size the same. Decrease the learning rate.
+
+D. Do not change the learning rate. Increase the batch size.
+
+## Answer
+
+Here is my explanation for this problem. The question points to the possibility of several local minima, and the optimizer is getting stuck in local minima. So, we need to modify the hyperparameters to jump out of the local minima and walk towards the global minimum.
+
+When the optimizer adjusts weight, ideally, we want to check the model's current state with all the records in the training set. However, this process is expensive when the training set is large. To train faster, with the batch size parameter, we can control how many records are considered when adjusting weight.
+
+When you have a larger batch size, the algorithm will likely see more variety of training inputs and adjust the weight more gradually to ensure there is a good fit for that batch.
+
+However, when the batch size is small (the worst case is a batch size of 1), the algorithm sees only a few records and adjusts the weight solely based on that small number of records. So, the algorithm will make more abrupt changes to weight as the decision is based on fewer samples.
+
+By reducing the batch size, we can force the optimizer to make abrupt changes to the weight to jump out of the local minima.
+
+Only choice B is valid in this case.
+
+Now, what about the learning rate? When you increase the learning rate, the optimizer can jump out of local minima. However, when the learning rate is too large, the optimizer may not converge to a global minimum
+
+In the optimizing for GPUs lecture, when parallelizing a training job, to maintain model quality, training batch size and learning rate are increased (or decreased) by the same factor (and direction).
+
+Among the given choices, only B makes sense
+
+Here is another explanation of the effect of batch size and learning rate
+
+https://towardsdatascience.com/exploit-your-hyperparameters-batch-size-and-learning-rate-as-regularization-9094c1c99b55
+
+Answer provided as part of the AWS sample questions
+
+B – It is most likely that the loss function is very curvy and has multiple local minima where the training is getting stuck. Decreasing the batch size would help the Data Scientist stochastically get out of the local minima saddles. Decreasing the learning rate would prevent overshooting the global loss function minimum. Refer to the paper at this link for an explanation.
+
+
 # AWS Sample Question #5
 
 NOTE: For formulas, you can download Model Performance Evaluation.pdf, available in the "Downloadable Resources" lecture in this section.
@@ -158,6 +201,72 @@ Model D misclassification cost = 5 * FP + 1 * FN = 5 * 2 + 1 * 18 = 10 + 18 = 28
 Both C and D meet the recall and FPR requirement. However, the business cost due to misclassification is less for model D.
 
 So, model D is the answer
+
+# AWS Sample Question #6
+
+A Data Scientist uses logistic regression to build a fraud detection model. While the model accuracy is 99%, 90% of the fraud cases are not detected by the model.
+
+What action will definitively help the model detect more than 10% of fraud cases?
+
+A. Using undersampling to balance the dataset
+
+B. Decreasing the class probability threshold
+
+C. Using regularization to reduce overfitting
+
+D. Using oversampling to balance the dataset
+
+## Answer
+
+The model's accuracy is very high at 99%; however, the model incorrectly classified over 90% of the fraud cases.
+
+True Positive = model correctly classifies a fraud record
+
+False Negative = model misclassifies a fraud record as normal
+
+For this model, the True positive is very low, and the False negative is very high.
+
+The data set is imbalanced as there are many more normal records than fraud records. Even when 90% of the fraud records were misclassified, the accuracy was very high
+
+The question asks for a definitive action to increase the true positive rate.
+
+Since this is a classification problem, lowering the class probability threshold can increase the true positive rate and reduce the false negative rate. However, this will also increase the false positive rate as more normal samples are incorrectly classified as fraud
+
+With Undersampling, we reduce the number of majority samples and minimize the imbalance in the data
+
+With Oversampling, we duplicate or use methods like SMOTE to synthetically generate more fraud data to balance the dataset
+
+Both these techniques are used to improve the model performance for an imbalanced dataset
+
+Regularization can help with overfitting scenarios by minimizing the influence of dominant features.
+
+But we don't know for sure if there is an overfitting problem.
+
+Among these choices, lowering the classification threshold can increase the true positive rate, and that is the objective of this question.
+
+B – Decreasing the class probability threshold makes the model more sensitive and, therefore, marks more cases as the positive class, which is fraud in this case. This will increase the likelihood of fraud detection. However, it comes at the price of lowering precision
+
+# AWS Sample Question #7
+
+A company is interested in building a fraud detection model. Currently, the Data Scientist does not have a sufficient amount of information due to the low number of fraud cases. Which method is MOST likely to detect the GREATEST number of valid fraud cases?
+
+A. Oversampling using bootstrapping
+
+B. Undersampling
+
+C. Oversampling using SMOTE
+
+D. Class weight adjustment
+
+## Answer
+
+C – With datasets that are not fully populated, the Synthetic Minority Over-sampling Technique (SMOTE) adds new information by adding synthetic data points to the minority class. This technique would be the most effective in this scenario
+
+SMOTE generates synthetic data using interpolation. This is better than naive techniques that simply duplicate existing records
+
+https://imbalanced-learn.org/stable/over_sampling.html
+
+https://towardsdatascience.com/oversampling-and-undersampling-5e2bbaf56dcf
 
 # AWS Sample Question #8
 
