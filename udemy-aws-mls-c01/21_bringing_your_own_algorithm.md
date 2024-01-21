@@ -60,7 +60,7 @@ SageMaker facilitates a streamlined process for training and hosting machine lea
 
 ## Hands-On
 
-- [Scikit-Learn Training and Serving Example](https://github.com/ChandraLingam/AmazonSageMakerCourse/blob/master/CustomAlgorithm/ScikitLearn/Iris/iris_scikit_learn_training_and_serving.ipynb)
+- [Scikit-Learn Training and Serving Example](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/CustomAlgorithm/ScikitLearn/Iris/iris_scikit_learn_training_and_serving.ipynb)
 
     - I had an error about `numexpr` package. I fixed it with below command:
 
