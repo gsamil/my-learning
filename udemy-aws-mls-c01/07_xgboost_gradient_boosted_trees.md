@@ -35,15 +35,17 @@
 
 ## Labs - Local Mode
 
+- Note that these examples are not specific to sagemaker, they are general XGBoost examples.
+
 ### 1. Data Preparation and Training  Simple Regression (Lesson 69&70)
 
 - Use [linear_data_preparation.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/LinearAndQuadraticFunctionRegression/linear_data_preparation.ipynb) to generate data.
 
 - Use [linear_xgboost_localmode.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/LinearAndQuadraticFunctionRegression/linear_xgboost_localmode.ipynb) to train XGBoost and Linear Regression models.
 
-- Sagemaker resets the notebook each time we stop and start the notebook instance.
-
-- Note that these examples are not specific to sagemaker, they are general XGBoost examples.
+```
+! Sagemaker resets the notebook each time we stop and start the notebook instance.
+```
 
 ### 2. Data Preparation and Training Non-linear Data set (Lesson 71&72)
 
@@ -57,7 +59,9 @@
 
 - Use [bikerental_data_preparation_rev3.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/BikeSharingRegression/bikerental_data_preparation_rev3.ipynb) to generate data and [bikerental_xgboost_localmode_rev3.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/BikeSharingRegression/bikerental_xgboost_localmode_rev3.ipynb) to train models.
 
-- These 3 example are same with 69,70 regarding the Sagemaker knowledge.
+```
+! These 3 example are same with 69,70 regarding the Sagemaker knowledge.
+```
 
 ## How to increase quota limit (Lesson 77)
 
@@ -75,9 +79,9 @@ If you encounter a `ResourceLimitExceeded Error`, follow these steps to request 
    - Scroll to the "Request Quota Increase" section.
    - If the current quota value is 0, request an increase to 1.
 
-### Additional Resources and References
-- **Instructions on Quota Increase**: Detailed instructions are available at [Requesting a Quota Increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
-- **SageMaker Service Quotas Page**: For more information, visit the [SageMaker Service Quotas Page](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html). It provides details on default SageMaker quotas for new accounts and guides on requesting an increase if you've exceeded your quota.
+### Additional Resources
+- Detailed instructions are available at [Requesting a Quota Increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html).
+- For more information, visit the [SageMaker Service Quotas Page](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html).
 
 ## Labs - Using SageMaker Provided Algorithms
 
