@@ -60,7 +60,7 @@
 - Use [bikerental_data_preparation_rev3.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/BikeSharingRegression/bikerental_data_preparation_rev3.ipynb) to generate data and [bikerental_xgboost_localmode_rev3.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/BikeSharingRegression/bikerental_xgboost_localmode_rev3.ipynb) to train models.
 
 ```
-! These 3 example are same with 69,70 regarding the Sagemaker knowledge.
+! The last 3 example are same with Lab 1 regarding the Sagemaker knowledge.
 ```
 
 ## How to increase quota limit (Lesson 77)
@@ -108,20 +108,35 @@ There are four steps when you use SageMaker cloud:
    - For CSV inference, the algorithm assumes that CSV input does not have the label column.
    - For libsvm training, the algorithm assumes that the label is in the first column. - - Subsequent columns contain the zero-based index value pairs for features. So each row has the format: `<label> <index0>:<value0> <index1>:<value1> ...` Inference requests for libsvm might not have labels in the libsvm format
 
-## 82. SageMaker Endpoint Features
+### How to run predictions against an existing SageMaker Endpoint (Lesson 80)
 
-AWS SageMaker provides robust management of model endpoints. It integrates with AWS CloudWatch and Auto Scaling for monitoring and automated scaling. Here's an overview of how SageMaker manages your model endpoints:
+TODOs in this lab:
+- Invoke endpoint for interactive use cases
+- Connect to an existing endpoint
+- Endpoint security
+- How to send multiple observations in a single call
+
+Let's go:
+- Use [xgboost_cloud_prediction_template.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/BikeSharingRegression/xgboost_cloud_prediction_template.ipynb)
+
+   ```
+   ! Notice that this notebook doesn't define any role/permissions; it's because AWS uses the permissions of the notebook instance to access the endpoint.
+   ```
+
+## SageMaker Endpoint Features (Lesson 82)
+
+### Integration with CloudWatch and Auto Scaling
+- AWS integrates with CloudWatch and Auto Scaling for monitoring and automated scaling. 
+- Here's an overview of how SageMaker manages your model endpoints:
+   - **CloudWatch**: AWS's monitoring service that continuously tracks instance and endpoint performance. You can set alarms based on specific metrics.
+   - **Auto Scaling**:
+      - **Replacement Instances**: Automatically launches a replacement if an instance becomes unhealthy.
+      - **Scaling Based on Workload**: Configurable to scale infrastructure depending on the workload, like increasing or decreasing the number of servers.
 
 ### High Availability and Load Balancing
 - **Multiple Instances**: Deploying your model on multiple instances can prevent a single point of failure. If one instance fails, the endpoint routes traffic to healthy instances.
 - **Load Balancing**: Requests to the endpoint are automatically balanced across available instances.
 - **Availability Zones**: Instances are distributed across multiple Availability Zones to survive zone-level failures.
-
-### Integration with CloudWatch and Auto Scaling
-- **CloudWatch**: AWS's monitoring service that continuously tracks instance and endpoint performance. You can set alarms based on specific metrics.
-- **Auto Scaling**:
-  - **Replacement Instances**: Automatically launches a replacement if an instance becomes unhealthy.
-  - **Scaling Based on Workload**: Configurable to scale infrastructure depending on the workload, like increasing or decreasing the number of servers.
 
 ### Metrics for Monitoring and Scaling
 - **CloudWatch Metrics**: Tracks errors, invocations, CPU, memory, and GPU utilization, etc.
@@ -133,11 +148,9 @@ AWS SageMaker provides robust management of model endpoints. It integrates with 
 - **Traffic Distribution**: Configure endpoints to distribute traffic among different model versions, useful for testing new models in production.
 - **Version Rollback**: Easily shift traffic back to a previous version if a new version underperforms.
 
-In summary, SageMaker's managed endpoints offer high availability, automated scaling, and flexibility in managing different model versions, enhancing the reliability and efficiency of your machine learning applications.
+## SageMaker Spot Instances - Save up to 90% for training jobs (Lesson 83)
 
-## 83. SageMaker Spot Instances - Save up to 90% for training jobs
-
-Spot instances in AWS SageMaker can significantly reduce the cost of training machine learning models, offering discounts of up to 90% compared to on-demand instances. Here's a comprehensive overview:
+Spot instances in AWS SageMaker can significantly reduce the cost of training machine learning models, offering discounts of up to 90% compared to on-demand instances. 
 
 ### Advantages of Using Spot Instances
 1. **Cost-Effective**: Huge discounts (over 80%, varies by instance type and size).
@@ -161,38 +174,31 @@ Spot instances in AWS SageMaker can significantly reduce the cost of training ma
 - **Example of Using Spot Instances**: [Amazon SageMaker Managed Spot Training Example](https://github.com/aws-samples/amazon-sagemaker-managed-spot-training/blob/main/xgboost_built_in_managed_spot_training_checkpointing/xgboost_built_in_managed_spot_training_checkpointing.ipynb)
 - **AWS Documentation**: [Managed Spot Training in SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/model-managed-spot-training.html)
 
-Spot instances in SageMaker are an excellent way to optimize costs for machine learning training, especially for projects where training time is not a critical factor.
+## More Labs
 
-## 89. Data Leakage
+### Lab - Multi-class Classification (Lesson 84)
 
-Data leakage is a critical issue in machine learning that can lead to overly optimistic model performance during training, but poor results in production. It occurs when information from the target variable is inadvertently included in the input features. Here’s an in-depth look at data leakage and how to avoid it.
+- Use [iris_data_preparation.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/IrisClassification/iris_data_preparation.ipynb) to generate data 
+- Use [iris_xgboost_localmode.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/IrisClassification/iris_xgboost_localmode.ipynb) to train model.
 
-### Example of Data Leakage
-- **Scenario**: In a medical dataset predicting diabetes, missing feature values are filled by computing the mean based on the target (diabetic or normal).
-- **Issue**: This approach leaks target information into the features, as the mean values are calculated using the target. The model will perform well on training and testing but fail in real-world scenarios where the target is unknown.
+### Lab - Binary Classification (Lesson 85)
+
+- Use [diabetes_data_preparation.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/DiabetesClassification/diabetes_data_preparation.ipynb) to generate data
+- Use [diabetes_xgboost_localmode.ipynb](https://github.com/gsamil/AmazonSageMakerCourse/blob/master/xgboost/DiabetesClassification/diabetes_xgboost_localmode.ipynb) for training.
+
+## Data Leakage (Lesson 89)
+
+- Data leakage is a critical issue in machine learning that can lead to overly optimistic model performance during training, but poor results in production.
+- It occurs when information from the target variable is inadvertently included in the input features.
 
 ### Common Sources of Data Leakage
-1. **Using Whole Data Statistics for Feature Engineering**:
-   - **Don’t**: Apply normalization, standardization, or imputation using statistics from the entire dataset, as it includes test data information.
-   - **Do**: Split your data first. Build statistics and apply feature engineering only on the training set to prevent leakage of test data information.
+1. **Using Whole Data Statistics for Feature Engineering:** Don’t apply normalization, standardization, or imputation using statistics from the entire dataset, as it includes test data information.
 
-2. **Duplicate Data Points**:
-   - **Don’t**: Allow duplicates in your test data, as the same data points might appear in both training and testing sets.
-   - **Do**: Remove duplicates, at least from the test data, to ensure distinct separation between training and testing datasets.
+2. **Duplicate Data Points:** Don’t Allow duplicates in your test data, as the same data points might appear in both training and testing sets.
 
-3. **Handling Time Series Data**:
-   - **Don’t**: Split time series data randomly. It can lead to future information leaking into the training set due to the sequential nature of the data.
-   - **Do**: Split data based on time. For example, train on the first three weeks of a month and test on the fourth week to maintain the temporal sequence.
+3. **Handling Time Series Data:** Don’t Split time series data randomly. It can lead to future information leaking into the training set due to the sequential nature of the data.
 
-### Additional Resources
-- **LinkedIn Post**: For more insights on data leakage, check out [Awadelrahman M. A. Ahmed’s LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:6986392826980777985/).
-
-### Final Thoughts
-Preventing data leakage requires careful planning and understanding of your data, especially in how you preprocess and split it for training and testing. By following the best practices outlined above, you can ensure more reliable and generalizable model performance.
-
-## 90. HyperParameter Tuning, Bias-Variance, Regularization (L1, L2)
-
-XGBoost is a powerful and popular machine learning algorithm, especially known for its performance in classification and regression tasks. Understanding and configuring its hyperparameters can significantly impact the model's performance. Let's explore some of the key hyperparameters in XGBoost and concepts like bias, variance, and regularization.
+## HyperParameter Tuning, Bias-Variance, Regularization (Lesson 90)
 
 ### Key Hyperparameters in XGBoost
 1. **Objective**: Sets the learning objective. Common options include:
@@ -205,13 +211,8 @@ XGBoost is a powerful and popular machine learning algorithm, especially known f
 3. **Early Stopping Rounds**: Helps prevent overfitting by stopping the training when the validation loss doesn't decrease for a specified number of rounds.
 
 ### Bias and Variance in Machine Learning
-- **High Bias (Underfitting)**: Indicates that the model hasn’t learned enough from the training data, leading to high training and validation errors.
-- **High Variance (Overfitting)**: Occurs when the model memorizes the training data too well, failing to generalize to new, unseen data.
-- **Balancing Bias and Variance**: A good model should find a balance between bias and variance for optimal generalization.
-
-### Addressing Bias and Variance
-- **To Reduce High Bias**: Add more features, combine features, create higher-order features, train longer, or decrease regularization.
-- **To Reduce High Variance**: Simplify the model, reduce the number of iterations, or increase regularization.
+- **High Bias (Underfitting)**: Indicates that the model hasn’t learned enough from the training data, leading to high training and validation errors. To reduce high bias, add more features, combine features, create higher-order features, train longer, or decrease regularization.
+- **High Variance (Overfitting)**: Occurs when the model memorizes the training data too well, failing to generalize to new, unseen data. To reduce high variance, simplify the model, reduce the number of iterations, or increase regularization.
 
 ### Understanding Regularization
 - Regularization reduces the model's dependence on specific features, encouraging it to learn from all relevant features.
@@ -222,10 +223,3 @@ XGBoost is a powerful and popular machine learning algorithm, especially known f
 ### Hyperparameter Tuning
 - **Manual vs. Automated Tuning**: While manual tuning allows for granular control, automated tuning (like grid search, random search, or SageMaker's automatic tuning) saves time and often yields better results.
 - **SageMaker's Approach**: Treats tuning as a supervised learning problem, optimizing the search for hyperparameters.
-
-### Final Thoughts
-Tuning XGBoost's hyperparameters requires a balance between model complexity and performance. Regularization plays a crucial role in preventing overreliance on certain features. Automatic tuning tools are practical for efficiently finding the best hyperparameters.
-
-### References
-- XGBoost Tuning Guide: [Tuning Guide](https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html)
-- SageMaker Hyperparameter Tuning: Look for "SageMaker Hyperparameter Tuning" in the course for detailed examples.
