@@ -1,11 +1,13 @@
-# 17. S3 Bucket Setup
+# SageMaker Housekeeping
 
-## Purpose
+## S3 Bucket Setup (Lesson 17)
+
+### Purpose
 
 - Store data files for model training.
 - Save trained models and artifacts post-training.
 
-## Steps for Bucket Creation
+### Steps for Bucket Creation
 
 1. **Sign-In**:
     - Log in to AWS console using `my_admin` account.
@@ -24,10 +26,9 @@
     - Click on `Create` to finalize the bucket setup.
     - The bucket will automatically replicate data across multiple Availability Zones in N. Virginia.
 
+## Setup SageMaker Notebook Instance (Lesson 18)
 
-# 18. Setup SageMaker Notebook Instance
-
-## Steps for Setup
+### Steps for Setup
 
 1. **Sign-In**:
     - Log in with the `my_admin` account to AWS Management Console.
@@ -51,7 +52,7 @@
     - Once the instance status is 'In service', access it by clicking `Open Jupyter`.
     - The homepage of the Jupyter notebook environment will appear.
 
-## Key Benefits
+### Key Benefits
 
 - AWS manages patching and maintenance of the notebook instance.
 - Stop the instance when not in use to avoid charges and restart as needed.

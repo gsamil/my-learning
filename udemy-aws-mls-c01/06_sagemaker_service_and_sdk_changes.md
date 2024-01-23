@@ -1,4 +1,6 @@
-# 63. Model Training using Console
+# 6. SageMaker Service and SDK Changes
+
+## Model Training using Console (Lesson 63)
 
 ### SageMaker and S3 Usage
 - **S3 Integration**: Extensively used for storing data and trained model artifacts.
@@ -39,7 +41,7 @@
 
 The lecture provides a detailed overview of recent updates in SageMaker, highlighting its integration with S3 for data management, the process of setting up a training job, and the cost-saving potential of managed spot training. Additionally, the importance of checkpointing in training jobs, especially when using spot instances, is emphasized. The lecture also outlines the enhancements in the SageMaker SDK, particularly in terms of its expanded integration with various file systems and support for spot instance training.
 
-# 64. Model Training using Python SDK
+## Model Training using Python SDK (Lesson 64)
 
 ### Overview
 - **SageMaker SDK**: Primary method for training in this course.
@@ -77,7 +79,7 @@ The lecture provides a detailed overview of recent updates in SageMaker, highlig
 ### Summary
 This overview provides a comprehensive guide on using the SageMaker SDK for training, including configuration, deployment, testing, and cleanup, with a focus on cost-saving practices. It emphasizes the use of spot instances and the importance of managing resources effectively to optimize training costs.
 
-# 65. Incremental Training
+## Incremental Training (Lesson 65)
 
 - **Purpose**: Enhances existing models with new data or improves performance without starting from scratch.
 - **Benefits**:

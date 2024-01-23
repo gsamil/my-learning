@@ -1,17 +1,19 @@
-# 34. Introduction
+# Model Performance Evaluation
 
-### Overview
+## Introduction (Lesson 34)
+
+#### Overview
 - AWS documentation provides concise information on model performance evaluation.
 - Understanding model evaluation is crucial for improving predictive quality.
 
-### Supervised Learning: Data Split
+#### Supervised Learning: Data Split
 - **Training Set**: Used for model training.
 - **Test Set**: Used for verifying model performance with unseen data.
 
-### Objective
+#### Objective
 - Determine if the model is underfitting, overfitting, or well-balanced.
 
-### Model Issues
+#### Model Issues
 - **Underfitting**: 
   - Poor performance on both training and test sets.
   - Solved by adding features, examples, or optimizing hyperparameters.
@@ -19,22 +21,22 @@
   - Good performance on training but poor on test set.
   - Solved by simplifying model or optimizing hyperparameters.
 
-### Performance Metrics
+#### Performance Metrics
 - Vary based on output type: continuous (regression), binary, or categorical (classification).
 
-# 35. Regression Model Performance
+## Regression Model Performance (Lesson 35)
 
-### Techniques for Comparison
+#### Techniques for Comparison
 - **Visual Comparison**: Using plots to compare actual and predicted values.
 - **Residual Distribution**: Histograms showing the difference between actual and predicted values.
 - **Root Mean Square Error (RMSE)**: Common metric for assessing accuracy.
 
-### Hands-On Exercise
+#### Hands-On Exercise
 - **Dataset**: Airline passenger data set from the World Bank.
 - **Objective**: Compare performance of four different prediction models.
 - **Data Attributes**: Year, GDP, population (input), passengers (target), model predictions.
 
-### Steps for Evaluation
+#### Steps for Evaluation
 1. **Plot Data**: Visualize actual vs. predicted values for each model.
 2. **Compute RMSE**: 
    - Square the difference between actual and predicted values.
@@ -45,13 +47,13 @@
    - Balanced models should have residuals centered around zero.
    - Skewed distributions indicate over or under-prediction.
 
-### RMSE Calculation
+#### RMSE Calculation
 - Use `mean_squared_error` method from SKLearn and compute square root for RMSE.
 - Compare RMSE values across models to assess accuracy.
 
-# 36. Binary Classifier Performance
+## Binary Classifier Performance (Lesson 36)
 
-### Understanding Positive and Negative Classes
+#### Understanding Positive and Negative Classes
 - **Positive Class**: Condition algorithm aims to detect.
 - **Negative Class**: Normal or default condition.
 - **Examples**:
@@ -59,16 +61,16 @@
   - Heart Disease Risk: Positive = At Risk, Negative = Normal.
   - Email Spam: Positive = Spam, Negative = Normal Email.
 
-### Binary Output vs. Raw Score
+#### Binary Output vs. Raw Score
 - Some classifiers directly produce binary output.
 - Others give a probability score, requiring a cutoff threshold for classification.
 
-### Evaluation Techniques - Part 1
+#### Evaluation Techniques - Part 1
 - **Visual Comparison**: Plots comparing actual vs. predicted binary values.
 - **Confusion Matrix**: Visual tool to assess model performance.
 - **Metrics**: Recall, precision, accuracy, etc., for quantitative assessment.
 
-### Hands-On Exercise
+#### Hands-On Exercise
 - **Dataset**: Exam result dataset correlating study hours with pass/fail outcome.
 - **Objective**: Compare performance of four models predicting exam outcomes.
 - **Plots for Comparison**:
@@ -80,45 +82,45 @@
   - Model 2 and 4 show extreme bias.
   - Model 1 and 3 need further evaluation for better model selection.
 
-## Building a Confusion Matrix for Classifier Performance
+### Building a Confusion Matrix for Classifier Performance
 
-### Example: Building the Matrix
+#### Example: Building the Matrix
 - **Data Attributes**: Hours, actual pass/fail, and model predictions.
 - **Counts**:
   - Total samples: 20 (10 pass, 10 fail).
   - Model Predictions: 15 pass, 5 fail.
 
-### Confusion Matrix Categories
+#### Confusion Matrix Categories
 1. **True Positive (TP)**: Positives correctly predicted.
 2. **True Negative (TN)**: Negatives correctly predicted.
 3. **False Negative (FN)**: Positives misclassified as negative.
 4. **False Positive (FP)**: Negatives misclassified as positive.
 
-### Calculating Categories
+#### Calculating Categories
 - **TP**: Count of actual = 1 and predicted = 1.
 - **TN**: Count of actual = 0 and predicted = 0.
 - **FN**: Count of actual = 1 and predicted = 0.
 - **FP**: Count of actual = 0 and predicted = 1.
 
-### Sample Calculation
+#### Sample Calculation
 - For a given model:
   - TP = 10 (correctly classified all positives).
   - TN = 5.
   - FN = 0 (no misclassification of positives).
   - FP = 5 (misclassified 5 negatives).
 
-### Summary
+#### Summary
 - **Rows**: Actual labels.
 - **Columns**: Predicted labels.
 - **Fractional View**: Divide row count by actual class count for rates (e.g., true positive rate).
 
-### Interpretation
+#### Interpretation
 - Model correctly classifies 100% positives and 50% negatives.
 - Misclassifies 50% negatives as positives.
 
-# 39. Binary Classifier - Metrics Definition
+## Binary Classifier - Metrics Definitio (Lesson 39)
 
-### Definitions of Key Metrics
+#### Definitions of Key Metrics
 1. **True Positive Rate (TPR)**:
    - Also known as **Recall** or **Probability of Detection**.
    - Measures correctly classified positives.
@@ -149,36 +151,36 @@
    - Harmonic mean of precision and recall.
    - Balances the trade-off between precision and recall.
 
-### Interpretation
+#### Interpretation
 - **Recall (TPR)**: Good at identifying actual positives.
 - **Precision**: Effectiveness in classifying positives while avoiding misclassifying negatives.
 - **Accuracy**: General effectiveness across all classifications.
 - **F1 Score**: Balance between precision and recall, useful for uneven class distribution.
 
-# 42. Binary Classifier - Area Under Curve Metrics
+## Binary Classifier - Area Under Curve Metrics (Lesson 42)
 
-### Understanding Cutoff Threshold
+#### Understanding Cutoff Threshold
 - Models produce raw scores between 0 and 1, requiring a cutoff for classification.
 - Common to use 0.5 as a threshold.
 - Threshold can be adjusted based on specific problem requirements.
 
-### Evaluating with Raw Scores
+#### Evaluating with Raw Scores
 - **Visual Observation**: Plot raw scores and observe classification at different thresholds.
 - **Area Under Curve (AUC)**: Measures model performance across various thresholds.
   - Higher AUC indicates superior performance.
   - AUC close to 0.5 suggests random guessing.
 
-# 43. Lab - Multiclass Classifier
+## Lab - Multiclass Classifier (Lesson 43)
 
-### Multi-Class Classification
+#### Multi-Class Classification
 - Predicts one of many possible outcomes (e.g., grades A, B, C, etc.).
 
-### Evaluation Techniques
+#### Evaluation Techniques
 - **Visual Observation**: Plots to compare actual and predicted values.
 - **Confusion Matrix**: Extended to accommodate multiple classes.
 - **Metrics**: Recall, precision, and F1 score for each class, averaged for overall model performance.
 
-### Hands-On Exercise
+#### Hands-On Exercise
 - **Dataset**: Iris classification dataset with three plant types.
 - **Objective**: Compare four models’ performance in classifying plant types.
 - **Confusion Matrix Construction**:
@@ -186,7 +188,7 @@
   - Columns for predicted labels.
   - Fractional representation for class-wise classification rates.
 
-### Model Metrics Comparison
+#### Model Metrics Comparison
 - **Precision**: Measure of correctly identified positives in each class.
 - **Recall**: True positive rate for each class.
 - **F1 Score**: Harmonic mean of precision and recall for each class.

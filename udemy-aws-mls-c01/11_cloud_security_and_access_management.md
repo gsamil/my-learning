@@ -12,9 +12,6 @@
   - In IaaS (e.g., EC2), customers manage guest OS, firewalls, and monitoring.
   - In managed services (e.g., S3), customers handle configuration, data access controls, and encryption settings.
 
-### Compliance Standards
-- AWS adheres to various global and industry-specific standards for data protection and infrastructure security.
-
 ### Identity and Access Management (IAM)
 - **Identities**: Users, machines, or software requiring AWS resource access.
 - **User Management**:

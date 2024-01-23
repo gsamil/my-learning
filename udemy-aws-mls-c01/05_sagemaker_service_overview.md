@@ -1,4 +1,6 @@
-# 49. How is AWS SageMaker different from other ML frameworks?
+# SageMaker Service Overview
+
+## How is AWS SageMaker different from other ML frameworks? (Lesson 49)
 
 ### Overview of SageMaker
 - SageMaker is a cloud service that leverages AWS resources for training and hosting machine learning models.
@@ -33,7 +35,7 @@
 ### Conclusion
 - SageMaker stands out in its ability to streamline the transition from model training to production deployment, backed by AWS's robust cloud infrastructure.
 
-# 50. Introduction to SageMaker
+## Introduction to SageMaker (Lesson 50)
 
 ### Key Capabilities
 1. **Jupyter Notebook Environment**:
@@ -70,7 +72,7 @@
 - SageMaker offers a comprehensive suite of services for building, training, and deploying ML models in the cloud.
 - Features include a fully managed development environment, extensive algorithm and framework support, scalable training infrastructure, and flexible deployment options for real-time and batch processing.
 
-# 51. Instance Type and Pricing
+## Instance Type and Pricing (Lesson 51)
 
 ### Instance Families
 1. **Standard Instances**:
@@ -117,7 +119,7 @@
 ### Summary
 SageMaker provides a range of instance options catering to various ML requirements, with pricing involving multiple components. Users can choose instances based on their algorithm's needs and manage costs effectively by right-sizing and using the free-tier benefits.
 
-# 52. Save Money on SageMaker Usage
+## Save Money on SageMaker Usage (Lesson 52)
 
 ### 1. SageMaker Savings Plan
 - **Overview**: Offers up to 64% discount over on-demand pricing for consistent usage.
@@ -146,7 +148,7 @@ By utilizing these methods, users can significantly reduce their AWS SageMaker c
 
 Also refer to the [CloudPractitionerReview-InfraPricingSupport.pdf](./CloudPractitionerReview-InfraPricingSupport.pdf). This review material provides a quick overview of important concepts related to infrastructure, pricing, support plans, and shared responsibility model in the cloud
 
-# 53. Data Format
+## Data Format (Lesson 53)
 
 ### Supported Data Formats
 - **Common Formats**: CSV and RecordIO (protobuf)
@@ -188,7 +190,7 @@ Also refer to the [CloudPractitionerReview-InfraPricingSupport.pdf](./CloudPract
 - File and Pipe modes offer different approaches to data transfer from S3 to training instances.
 - Practically, users can create, upload, and manage these data formats using SageMaker's integrated tools and AWS libraries.
 
-# 54. SageMaker Built-in Algorithms
+## SageMaker Built-in Algorithms (Lesson 54)
 
 AWS SageMaker provides a range of built-in algorithms optimized for cloud-based machine learning. These algorithms can be broadly categorized based on their applications:
 
@@ -260,7 +262,7 @@ AWS SageMaker provides a range of built-in algorithms optimized for cloud-based 
 - They are optimized for AWS cloud, offering scalability and GPU training advantages.
 - Users can choose the appropriate algorithm based on their data and use case requirements.
 
-# 55. Popular Frameworks and Bring Your Own Algorithm
+## Popular Frameworks and Bring Your Own Algorithm (Lesson 55)
 
 ### SageMaker Ground Truth
 - **Purpose**: Assists in labeling data for machine learning.
