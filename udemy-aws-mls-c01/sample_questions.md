@@ -1,4 +1,4 @@
-# AWS Sample Question #1
+# AWS Sample Question #1 (Lecture 5.57)
 
 A Machine Learning team has several large CSV datasets in Amazon S3. Historically, models built with the Amazon SageMaker Linear Learner algorithm have taken hours to train on similar-sized datasets. The team’s leaders need to accelerate the training process.
 
@@ -18,7 +18,7 @@ A – Amazon SageMaker Pipe mode streams the data directly to the container, whi
 
 https://aws.amazon.com/blogs/machine-learning/now-use-pipe-mode-with-csv-datasets-for-faster-training-on-amazon-sagemaker-built-in-algorithms/
 
-# AWS Sample Question #2
+# AWS Sample Question #2 (Lecture 3.28)
 
 A term frequency–inverse document frequency (tf–idf) matrix using both unigrams and bigrams is built from a text corpus consisting of the following two sentences:
 
@@ -106,7 +106,7 @@ Answer provided as part of the AWS sample questions
 B – It is most likely that the loss function is very curvy and has multiple local minima where the training is getting stuck. Decreasing the batch size would help the Data Scientist stochastically get out of the local minima saddles. Decreasing the learning rate would prevent overshooting the global loss function minimum. Refer to the paper at this link for an explanation.
 
 
-# AWS Sample Question #5
+# AWS Sample Question #5 (Lecture 4.46)
 
 NOTE: For formulas, you can download Model Performance Evaluation.pdf, available in the "Downloadable Resources" lecture in this section.
 
@@ -124,13 +124,13 @@ After creating each binary classification model, the Data Scientist generates th
 
 Which confusion matrix represents the model that satisfies the requirements?
 
-A. TN = 91, FP = 9, FN = 22, TP = 78
+A. TN = 91, FP = 9, FN = 22, TP = 78 RECALL = TP/TP+FN = 78% FPR = FP/TN+FP = 9% COST = 5*FP + 1*FN = 45 + 22 = 67
 
-B. TN = 99, FP = 1, FN = 21, TP = 79
+B. TN = 99, FP = 1, FN = 21, TP = 79 RECALL = TP/TP+FN = 79% FPR = FP/TN+FP = 1% COST = 5*FP + 1*FN = 5 + 21 = 26
 
-C. TN = 96, FP = 4, FN = 10, TP = 90
+C. TN = 96, FP = 4, FN = 10, TP = 90 RECALL = TP/TP+FN = 90% FPR = FP/TN+FP = 4% COST = 5*FP + 1*FN = 20 + 10 = 30
 
-D. TN = 98, FP = 2, FN = 18, TP = 82
+D. TN = 98, FP = 2, FN = 18, TP = 82 RECALL = TP/TP+FN = 82% FPR = FP/TN+FP = 2% COST = 5*FP + 1*FN = 10 + 18 = 28
 
 ## Answer
 
@@ -268,7 +268,7 @@ https://imbalanced-learn.org/stable/over_sampling.html
 
 https://towardsdatascience.com/oversampling-and-undersampling-5e2bbaf56dcf
 
-# AWS Sample Question #8
+# AWS Sample Question #8 (Lecture 7.92)
 
 A Machine Learning Engineer is preparing a data frame for a supervised learning task with the Amazon SageMaker Linear Learner algorithm. The ML Engineer notices the target label classes are highly imbalanced and multiple feature columns contain missing values. The proportion of missing values across the entire data frame is less than 5%.
 
@@ -286,7 +286,7 @@ D. For each feature, approximate the missing values using supervised learning ba
 
 D – Use supervised learning to predict missing values based on the values of other features. Different supervised learning approaches might have different performances, but any properly implemented supervised learning approach should provide the same or better approximation than mean or median approximation, as proposed in responses A and C. Supervised learning applied to the imputation of missing values is an active field of research
 
-# AWS Sample Question #9
+# AWS Sample Question #9 (Lecture 3.30)
 
 A company has collected customer comments on its products, rating them as safe or unsafe, using decision trees. The training dataset has the following features: id, date, full review, full review summary, and a binary safe/unsafe tag. During training, any data sample with missing features was dropped. In a few instances, the test set was found to be missing the full review text field.
 
@@ -304,7 +304,7 @@ D. Generate synthetic data to fill in the fields that are missing data, and then
 
 B – In this case, a full review summary usually contains the most descriptive phrases of the entire review and is a valid stand-in for the missing full review text field.
 
-# AWS Sample Question #10
+# AWS Sample Question #10 (Lecture 5.59)
 
 An insurance company needs to automate claim compliance reviews because human reviews are expensive and error-prone. The company has a large set of claims and a compliance label for each. Each claim consists of a few sentences in English, many of which contain complex related information. Management would like to use Amazon SageMaker built-in algorithms to design a machine learning supervised model that can be trained to read each claim and predict if the claim is compliant or not.
 
