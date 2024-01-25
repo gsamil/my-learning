@@ -47,7 +47,7 @@ Each word individually (unigram) is “Please,” “call,” ”the,” ”numb
 
 The unique bigrams are “Please call,” “call the,” ”the number,” “number below,” “Please do,” “do not,” “not call,” and “call us.”
 
-# AWS Sample Question #3
+# AWS Sample Question #3 (Lecture 19.206)
 
 A company is setting up a system to manage all of the datasets it stores in Amazon S3. The company would like to automate running transformation jobs on the data and maintaining a catalog of the metadata concerning the datasets. The solution should require the least amount of setup and maintenance. Which solution will allow the company to achieve its goals?
 
