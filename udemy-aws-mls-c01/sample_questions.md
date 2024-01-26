@@ -63,7 +63,7 @@ D. Create an AWS Data Pipeline that transforms the data. Then, create an Apache 
 
 B – AWS Glue is the correct answer because this option requires the least amount of setup and maintenance since it is serverless, and it does not require management of the infrastructure. Refer to this link for supporting information. A, C, and D are all solutions that can solve the problem, but require more steps for configuration, and require higher operational overhead to run and maintain.
 
-# AWS Sample Question #4
+# AWS Sample Question #4 (Lecture 20.223)
 
 A Data Scientist is working on optimizing a model during the training process by varying multiple parameters. The Data Scientist observes that, during multiple runs with identical parameters, the loss function converges to different, yet stable, values.
 
@@ -202,7 +202,7 @@ Both C and D meet the recall and FPR requirement. However, the business cost due
 
 So, model D is the answer
 
-# AWS Sample Question #6
+# AWS Sample Question #6 (Lecture 20.225)
 
 A Data Scientist uses logistic regression to build a fraud detection model. While the model accuracy is 99%, 90% of the fraud cases are not detected by the model.
 
@@ -246,7 +246,7 @@ Among these choices, lowering the classification threshold can increase the true
 
 B – Decreasing the class probability threshold makes the model more sensitive and, therefore, marks more cases as the positive class, which is fraud in this case. This will increase the likelihood of fraud detection. However, it comes at the price of lowering precision
 
-# AWS Sample Question #7
+# AWS Sample Question #7 (Lecture 20.227)
 
 A company is interested in building a fraud detection model. Currently, the Data Scientist does not have a sufficient amount of information due to the low number of fraud cases. Which method is MOST likely to detect the GREATEST number of valid fraud cases?
 
