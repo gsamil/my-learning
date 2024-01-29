@@ -1,4 +1,4 @@
-# Introduction
+# Domain 1: Cloud Concepts
 
 ## Task Statement 1.1: Define the Benefits of the AWS Cloud
 - Introduction to AWS fundamentals.
