@@ -33,3 +33,12 @@
 9. **Task Statement 3.8:** Identify Services from other in-scope AWS Service Categories
 10. **Walkthrough Question 5:** AWS Deployment and Operation Methods
 11. **Walkthrough Question 6:** AWS Global Infrastructure
+
+# [Domain 4: Billing, Pricing, and Support in AWS](./domain_04_billing_pricing_and_support.md)
+
+1. Introduction
+2. **Task Statement 4.1:** Compare AWS Pricing Models
+3. **Task Statement 4.2:** Understand Resources for Billing, Budget, and Cost Management
+4. **Task Statement 4.3:** Identify AWS Technical Resources and Support Options
+5. **Walkthrough Question 7:** AWS Pricing Models
+6. **Walkthrough Question 8:** AWS Consolidated Billing
