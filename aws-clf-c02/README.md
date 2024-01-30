@@ -20,7 +20,7 @@
 7. **Walkthrough Question 3:** AWS Shared Responsibility Model
 8. **Walkthrough Question 4:** AWS Access Management Capabilities
 
-# [Domain 3: Cloud Technology and Services](./domain_03_cloud_technology_and_services.md)
+## [Domain 3: Cloud Technology and Services](./domain_03_cloud_technology_and_services.md)
 
 1. Introduction
 2. **Task Statement 3.1:** Define Methods of Deploying and Operating in the AWS Cloud
@@ -34,7 +34,7 @@
 10. **Walkthrough Question 5:** AWS Deployment and Operation Methods
 11. **Walkthrough Question 6:** AWS Global Infrastructure
 
-# [Domain 4: Billing, Pricing, and Support in AWS](./domain_04_billing_pricing_and_support.md)
+## [Domain 4: Billing, Pricing, and Support in AWS](./domain_04_billing_pricing_and_support.md)
 
 1. Introduction
 2. **Task Statement 4.1:** Compare AWS Pricing Models
