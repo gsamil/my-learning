@@ -13,9 +13,11 @@ I created this repo to have an organized view of them in my mind. I might not ne
 - Machine Learning
     - [Machine Learning Fundamentals](./machine_learning/README.md)
     - [LLMs](./llms/README.md)
-    - [AWS Certified Machine Learning Specialty (MLS-C01)](./udemy-aws-mls-c01/README.md)
+    - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./udemy-aws-mls-c01/README.md)
+    - [AWS Certified Cloud Practitioner (AWS Course Notes)](./aws-clf-c02/README.md)
     - [Speech Processing](./speech_processing/README.md)
 - [Algorithms](https://github.com/gsamil/algorithms/)
+- [Statistics](./statistics/README.md)
 
 ## TODOs
 
