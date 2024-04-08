@@ -1,1 +1,0 @@
-- [MFCC](./mfcc.md)

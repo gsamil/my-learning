@@ -14,11 +14,11 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [Machine Learning References](./machine_learning/ml_references.md)
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./machine_learning/udemy-aws-mls-c01/README.md)
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./machine_learning/aws-clf-c02/README.md)
-    - [Speech Processing](./machine_learning/speech_processing/README.md)
 - [Algorithms](https://github.com/gsamil/algorithms/)
-- [Statistics](./statistics/README.md)
 
 ## TODOs
 
-- Make a blog from [Alignment Problem](./alignment_problem.md)
-- There are TODOs in [Hypothesis Testing](./statistics/hypothesis-testing.md)
+- Make a blog from [Alignment Problem](./machine_learning/alignment_problem.md)
+- Make a blog from [Statistics - Hypothesis Testing](./statistics/hypothesis-testing.md)
+- Make a blog from [Statistics - z-score](./statistics/z-score/z-score.md)
+- Make a blog from [Speech Processing - MFCC](./machine_learning/mfcc.md)
