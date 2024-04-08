@@ -12,7 +12,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [PostgreSQL Tutorial](./postgresql.md)
 - Machine Learning
     - [Machine Learning References](./ml_references.md)
-    - [LLMs](./llms/README.md)
+    - [Alignment Problem](./alignment_problem.md)
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./udemy-aws-mls-c01/README.md)
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./aws-clf-c02/README.md)
     - [Speech Processing](./speech_processing/README.md)
@@ -21,5 +21,5 @@ I created this repo to have an organized view of them in my mind. I might not ne
 
 ## TODOs
 
-- There are todos in [Alignment Problem](./llms/alignment_problem.md)
+- Make a blog from [Alignment Problem](./alignment_problem.md)
 - There are TODOs in [Hypothesis Testing](./statistics/hypothesis-testing.md)
