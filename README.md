@@ -11,7 +11,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [Apache Kafka Tutorial](./kafka.md)
     - [PostgreSQL Tutorial](./postgresql.md)
 - Machine Learning
-    - [Machine Learning Fundamentals](./machine_learning/README.md)
+    - [Machine Learning References](./ml_references.md)
     - [LLMs](./llms/README.md)
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./udemy-aws-mls-c01/README.md)
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./aws-clf-c02/README.md)
