@@ -8,8 +8,8 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [Docker Containers & Kubernetes Fundamentals](./devops/docker_kubernetes/README.md)
     - [Graylog](./devops/graylog.md)
 - BackEnd
-    - [Apache Kafka Tutorial](./kafka.md)
-    - [PostgreSQL Tutorial](./postgresql.md)
+    - [Apache Kafka Tutorial](./backend/kafka.md)
+    - [PostgreSQL Tutorial](./backend/postgresql.md)
 - Machine Learning
     - [Machine Learning References](./ml_references.md)
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./udemy-aws-mls-c01/README.md)
