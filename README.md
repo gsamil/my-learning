@@ -15,3 +15,6 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./machine_learning/udemy-aws-mls-c01/README.md)
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./machine_learning/aws-clf-c02/README.md)
 - [Algorithms](https://github.com/gsamil/algorithms/)
+- Python
+    - [Run Function in Background](./python/run_on_background.py)
+    - [Run Parallel Functions in Background](./python/run_on_background_mult.py)
