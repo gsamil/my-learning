@@ -24,7 +24,7 @@ async def async_main() -> None:
 
 def await_main() -> None:
     asyncio.run(async_main())
-    print("Done!")
+    print("Doneee!")
 
 
 # if __name__ == "__main__":
