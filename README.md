@@ -15,6 +15,6 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./machine_learning/aws-clf-c02/README.md)
 - [Algorithms](https://github.com/gsamil/algorithms/)
 - Python
-    - [Run Function in Background](./python/run_on_background.md)
+    - [Run Function in Background](./python/run_on_background.ipynb)
 - Databricks
     - [Databricks](./databricks/readme.md)
