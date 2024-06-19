@@ -2,6 +2,11 @@
 
 I created this repo to have an organized view of them in my mind. I might not need this in future, or maybe I may need to create more, for now let's start with this.
 
+- Website
+    - [Blogs](https://abdullahsamilguser.com/blog/)
+    - [Paper Summaries](https://abdullahsamilguser.com/paper/)
+    - [Books](https://abdullahsamilguser.com/book/)
+    - [ML References](https://abdullahsamilguser.com/ml_references.html)
 - DevOps
     - [Gitlab CI/CD](./devops/gitlab-ci-cd.md)
     - [Portainer](./devops/portainer.md)
