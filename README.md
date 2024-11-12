@@ -18,6 +18,8 @@ I created this repo to have an organized view of them in my mind. I might not ne
 - Machine Learning
     - [AWS Certified Machine Learning Specialty (Udemy Course Notes)](./machine_learning/udemy-aws-mls-c01/README.md)
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./machine_learning/aws-clf-c02/README.md)
+- System Design
+    - [Designing Machine Learning Systems](./system/chip_huyen.md)
 - [Algorithms](https://github.com/gsamil/algorithms/)
 - Python
     - [Run a Function on Background](./python/run_on_background.py)
