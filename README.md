@@ -20,9 +20,12 @@ I created this repo to have an organized view of them in my mind. I might not ne
     - [AWS Certified Cloud Practitioner (AWS Course Notes)](./machine_learning/aws-clf-c02/README.md)
 - System Design
     - [Designing Machine Learning Systems](./system/chip_huyen.md)
-- [Algorithms](https://github.com/gsamil/algorithms/)
-- Python
-    - [Run a Function on Background](./python/run_on_background.py)
-    - [Run Multiple Functions on Background](./python/run_on_background_mult.py)
+- Coding
+    - [Algorithms](https://github.com/gsamil/algorithms/)
+    - Python
+        - [Run a Function on Background](./python/run_on_background.py)
+        - [Run Multiple Functions on Background](./python/run_on_background_mult.py)
+    - [Leetcode](https://leetcode.com/problemset/)
+    - [ML Code Challenges](https://www.deep-ml.com)
 - Databricks
     - [Databricks](./databricks/readme.md)
