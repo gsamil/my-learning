@@ -48,6 +48,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
 - [Designing Machine Learning Systems](./system/chip_huyen.md)
 
 ## Coding
+
 - [Algorithms](https://github.com/gsamil/algorithms/)
 - Python
     - [Run a Function on Background](./python/run_on_background.py)
