@@ -22,6 +22,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
 
 | Title | Date | Description |
 | --- | --- | --- |
+| [DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters](./machine_learning/lex_friedman_deepseek.md) | 2025-3-6 | my takeaways from the video |
 | [Advancing AI with Local Learning and Uncertainty Estimation](./machine_learning/test_time_adaptation.md) | 2024-12-08 | o1-preview summary of the video |
 | [Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)](./machine_learning/standford_cs229_building_llms.md) | 2024-11-24 | o1-preview summary of the video |
 | [CLIP - Contrastive Language-Image Pretraining](./machine_learning/clip.md) | 2024-05-05 | A brief explanation of CLIP method |
