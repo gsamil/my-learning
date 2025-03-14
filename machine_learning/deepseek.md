@@ -13,7 +13,7 @@
 | 2025-01-22 | [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948)               |
 | 2025-01-** | [On DeepSeek and Export Controls](https://darioamodei.com/on-deepseek-and-export-controls)                                           |
 | 2025-01-26 | [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://youtu.be/bAWV_yrqx4w)                   |
-| 2025-02-03 | [DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters \| Lex Fridman Podcast #459](https://youtu.be/_1f-o0nqpEI) |
+| 2025-02-03 | [DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters \| Lex Fridman Podcast #459](./lex_friedman_deepseek.md) |
 
 
 - It's became famous after the release of DeepSeek-R1.
