@@ -13,3 +13,4 @@
 ## References
 
 - [Deep Dive into LLMs like ChatGPT](https://youtu.be/7xTGNNLPyMI)
+- [AlphaGo - The Movie | Full award-winning documentary](https://youtu.be/WXuK6gekU1Y)
