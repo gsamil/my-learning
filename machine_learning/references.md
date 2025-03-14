@@ -36,6 +36,8 @@
 - [Alpha Signal](https://alphasignal.ai)
 - [AI News](https://buttondown.com/ainews)
 - [Language Models & Co. by Jay Alammar](https://newsletter.languagemodels.co)
+- [Centre for AI Leadership](https://centreforaileadership.org/)
+- [Interconnects](https://www.interconnects.ai/)
 
 ## LLM
 
@@ -52,6 +54,7 @@
 - [Perplexity](https://perplexity.ai/)
 - [DeepSeek](https://chat.deepseek.com/)
 - [Qwen Chat](https://chat.qwenlm.ai/)
+- [Grok](https://grok.com/)
 
 ### System Design
 
