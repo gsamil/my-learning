@@ -22,6 +22,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
 
 | Title | Date | Description |
 | --- | --- | --- |
+| [DeepSeek](./machine_learning/deepseek.md) | 2025-3-14 | Summary documentation containing history of DeepSeek models and various URLs |
 | [Deep Dive into LLMs like ChatGPT](./machine_learning/andrej_karpathy_llm_deepdive.md) | 2025-3-6 | my takeaways from the video |
 | [DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters](./machine_learning/lex_friedman_deepseek.md) | 2025-3-6 | my takeaways from the video |
 | [Advancing AI with Local Learning and Uncertainty Estimation](./machine_learning/test_time_adaptation.md) | 2024-12-08 | o1-preview summary of the video |
