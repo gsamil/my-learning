@@ -60,6 +60,9 @@
 
 - [Real-world ML and LLM systems](https://www.evidentlyai.com/ml-system-design)
 
+### Various Topics
+
+- [Using pip to install a Large Language Model that’s under 100MB](https://simonwillison.net/2025/Feb/7/pip-install-llm-smollm2/)
 
 ## Challenges
 
