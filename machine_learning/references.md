@@ -2,6 +2,7 @@
 
 ## Various Topics
 
+- [Stanford CS25: V2 I Introduction to Transformers w/ Andrej Karpathy](https://youtu.be/XfpMkf4rD6E)
 - [Precision & Recall](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)
 - [Activation Functions in Neural Networks](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
 - [Backpropagation](./backpropagation.md)
@@ -55,6 +56,7 @@
 - [DeepSeek](https://chat.deepseek.com/)
 - [Qwen Chat](https://chat.qwenlm.ai/)
 - [Grok](https://grok.com/)
+- [NotebookLM](https://notebooklm.google/)
 
 ### System Design
 
