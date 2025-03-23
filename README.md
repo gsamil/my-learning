@@ -22,6 +22,7 @@ I created this repo to have an organized view of them in my mind. I might not ne
 
 | Title | Date | Description |
 | --- | --- | --- |
+| [Confidence Intervals for Regression Models](./machine_learning/regression_confidence.md) | 2025-3-23 | A comparison of methods of computing confidence intervals for regression models |
 | [DeepSeek](./machine_learning/deepseek.md) | 2025-3-14 | Summary documentation containing history of DeepSeek models and various URLs |
 | [Deep Dive into LLMs like ChatGPT](./machine_learning/andrej_karpathy_llm_deepdive.md) | 2025-3-6 | my takeaways from the video |
 | [DeepSeek, China, OpenAI, NVIDIA, xAI, TSMC, Stargate, and AI Megaclusters](./machine_learning/lex_friedman_deepseek.md) | 2025-3-6 | my takeaways from the video |
