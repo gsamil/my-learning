@@ -2,7 +2,7 @@
 
 If our regression model is not a perfect fit for our training data (and this is mostly the case), we might want to know how confident our model is about the predicted value.
 
-Generating a confidence interval related to an output value can help us to understand this, because we can use it to calculate a confidence score for the prediction.
+Generating a confidence interval for the prediction can help us to understand this, because we can use it to calculate a confidence score for the prediction.
 
 In this post, I will explore possible options to generate a confidence interval for regression models.
 
@@ -61,16 +61,44 @@ How do we train multiple different models?
 
 - Train multiple models by resampling the training data with replacement, which means creating bootstrapped datasets from original dataset by replacing the samples in-place.
 
-- So each bootstapped dataset will contain some duplicated samples, and it will not contain some of the samples at all.
+- So each bootstrapped dataset will contain some duplicated samples, and it will not contain some of the samples at all.
 
 Considerations with the ensemble methods:
 
 - As we train many models (typically around 1000), generating confidence interval will be computationally much more expensive compared to the first 2 methods.
-- Although this method doesn't assume any underlying distribution for the data (which is advantageous when it's unknown or non-gaussian), confidence intervals will only represent what model has learned. So if models didn't learn the data well, intervals may not correlate with actual variance.
+- Although this method doesn't assume any underlying distribution for the data (which is advantageous when it's unknown or non-Gaussian), confidence intervals will only represent what model has learned. So if models didn't learn the data well, intervals may not correlate with actual variance.
 
-### 4. Bayesian Neural Networks (BNN)
+### 4. Training a 2nd Model to Predict Variance
 
-In a normal neural network, weights are fixed values, while in a BNN, weights are models as probability distributions (usually gaussian distribution where we try to learn mean and standard deviation).
+This might seem strange at first glance, but if we follow a specific method, it's possible to train a secondary model that can predict the variance (MAE or RMSE) in the first model. Then we can use this variance to calculate a confidence score for each sample.
+
+1. So let's say we have a regression model trained on our training data & a set of features.
+2. We can use this model to predict outputs on a separate dataset (either validation or else).
+3. Now we can use the same set of features & first model's output as input to the 2nd model, then use this separate dataset to train a model that will predict the MAE or RMSE of the first model.
+
+- Why not use the same train data in both models?
+
+  Because first model is already fine-tuned for the training data, that's why it will have lower errors, which will cause a bias in the second model
+
+- Isn't predicting the output itself and the error (MAE(label - output)) same thing, what extra information can this 2nd model learn?
+
+  This is a valid question if we try to learn the actual errors, here we try to learn the MAE instead, which is closer to learning variance instead of mean (in Gaussian scenario). So basically we don't train the 2nd model with the same information.
+
+4. After training this 2nd model, we can use various formulas (based on our need), to convert this value into a confidence score. A simple formula would be to use the sigmoid:
+
+    $$confidence = 1 / (1 + exp(a - b * (main~model~prediction / (max - min))))$$
+
+    where `max` is
+    
+    $$main~model~prediction + error~model~prediction$$ 
+    
+    and `min` is 
+    
+    $$main~model~prediction - error~model~prediction$$
+
+### 5. Bayesian Neural Networks (BNN)
+
+In a normal neural network, weights are fixed values, while in a BNN, weights are modeled as probability distributions (usually Gaussian distribution where we try to learn mean and standard deviation).
 
 This means there is no single deterministic output from a BNN, we sample from the weight distributions to compute the output.
 
@@ -121,7 +149,8 @@ Below is a summary table comparing certain aspects of each table, to make the de
 | 1 - Naive Statistical Method                  | Empirical     | Very Low                                    | Residual distribution is representative          |
 | 2 - Mean/Standard Deviation Output (MLE Loss) | Parametric    | Low                                         | Outputs are normally distributed                 |
 | 3 - Ensemble Methods                          | Empirical     | High                                        | -                                                |
-| 4 - Bayesian Neural Networks (BNN)            | Parametric    | Very High (or Moderate if using MC Dropout) | Model weights have a known prior (e.g. Gaussian) |
+| 4 - Training a 2nd Model to Predict Variance  | Empirical     | Moderate                                    | -                                                |
+| 5 - Bayesian Neural Networks (BNN)            | Parametric    | Very High (or Moderate if using MC Dropout) | Model weights have a known prior (e.g. Gaussian) |
 
 ## References
 
@@ -139,5 +168,6 @@ Below is a summary table comparing certain aspects of each table, to make the de
 | 1 - Naive Method                                     | Empirical     | Calculates uncertainty directly from the observed residuals of the training data                                          |
 | 2 - Mean/Standard Deviation Output (MLE Loss)        | Parametric    | Assumes a specific form (typically a Gaussian distribution) for the prediction error                                      |
 | 3 - Ensemble Methods                                 | Empirical     | Variability among these predictions from multiple independent models are used directly to estimate uncertainty            |
-| 4 - Bayesian Neural Networks                         | Parametric    | Places prior distributions on the model weights and computes a posterior distribution based on a chosen parametric family |
+| 4 - Training a 2nd Model to Predict Variance         | Empirical     | Trains a separate model to predict the variance of the first model's predictions                                          |
+| 5 - Bayesian Neural Networks                         | Parametric    | Places prior distributions on the model weights and computes a posterior distribution based on a chosen parametric family |
 
