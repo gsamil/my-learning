@@ -47,6 +47,7 @@
 - [Chatbot Arena LLM Leaderboard](https://lmarena.ai/?leaderboard)
 - [Huggingface OpenLLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)
 - [HELM](https://crfm.stanford.edu/helm/classic/latest/)
+- [Artificial Analysis](https://artificialanalysis.ai/)
 
 ### Chat UIs
 
@@ -57,6 +58,10 @@
 - [Qwen Chat](https://chat.qwenlm.ai/)
 - [Grok](https://grok.com/)
 - [NotebookLM](https://notebooklm.google/)
+- [Open Router](https://openrouter.ai)
+- [Google AI Studio](https://aistudio.google.com/)
+- [AnyChat](https://huggingface.co/spaces/akhaliq/anychat)
+
 
 ### System Design
 
