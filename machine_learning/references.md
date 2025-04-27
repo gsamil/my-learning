@@ -39,6 +39,7 @@
 - [Language Models & Co. by Jay Alammar](https://newsletter.languagemodels.co)
 - [Centre for AI Leadership](https://centreforaileadership.org/)
 - [Interconnects](https://www.interconnects.ai/)
+- [simple.ai](https://simple.ai/)
 
 ## LLM
 
