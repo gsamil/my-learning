@@ -50,13 +50,6 @@ I created this repo to have an organized view of them in my mind. I might not ne
 ## Coding
 
 - [Algorithms](https://github.com/gsamil/algorithms/)
-- Python
-    - [Run a Function on Background](./python/run_on_background.py)
-    - [Run Multiple Functions on Background](./python/run_on_background_mult.py)
-
-## Databricks
-    
-- [Databricks](./databricks/readme.md)
 
 ## Paper Summaries
 
