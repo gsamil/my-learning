@@ -41,6 +41,10 @@
 - [Interconnects](https://www.interconnects.ai/)
 - [simple.ai](https://simple.ai/)
 
+## System Design
+
+- [Real-world ML and LLM systems](https://www.evidentlyai.com/ml-system-design)
+
 ## LLM
 
 ### Leaderboards
@@ -63,10 +67,25 @@
 - [Google AI Studio](https://aistudio.google.com/)
 - [AnyChat](https://huggingface.co/spaces/akhaliq/anychat)
 
+### Local Chat UIs
 
-### System Design
+- [LibreChat](https://www.librechat.ai/)
+- [Jan](https://jan.ai/)
+- [LM Studio](https://lmstudio.ai/)
+- [AnythingLLM](https://anythingllm.com/)
 
-- [Real-world ML and LLM systems](https://www.evidentlyai.com/ml-system-design)
+### AI Assisted Coding
+
+- [Cursor](https://www.cursor.com/)
+- [Windsurf](https://windsurf.com/editor)
+- [Codex](https://openai.com/codex/)
+- [Claude Code](https://www.anthropic.com/claude-code)
+- [Gemini CLI](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/)
+
+### MCP
+
+- [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp)
+- [glama.ai/mcp/servers](https://glama.ai/mcp/servers)
 
 ### Various Topics
 
